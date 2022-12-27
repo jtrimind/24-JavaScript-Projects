@@ -1,0 +1,46 @@
+body {
+  background-color: #ffa600;
+  color: #fff;
+}
+
+#stopwatch {
+  width: 800px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#timer {
+  font-size: 2em;
+}
+
+button {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ffa600;
+  color: #fff;
+  border: solid 1px #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+}
+button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+  color: #ffa600;
+}
+
+/*# sourceMappingURL=stopwatch.css.map */

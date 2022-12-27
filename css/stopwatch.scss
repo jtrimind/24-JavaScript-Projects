@@ -1,0 +1,55 @@
+$orange: #ffa600;
+$white: #fff;
+$base-color: $orange;
+
+@mixin transition {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin corners($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+body {
+    background-color: $orange;
+    color: $white;
+}
+
+#stopwatch {
+    width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2.6em;
+}
+
+#timer {
+    font-size: 2em;
+}
+
+button {
+    @include corners(5px);
+    background-color: $base-color;
+    color: $white;
+    border: solid 1px $white;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+
+    &:hover {
+        @include transition;
+        background-color: $white;
+        color: $orange;
+    }
+}
