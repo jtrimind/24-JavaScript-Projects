@@ -1,4 +1,4 @@
-# Vanilla JavaScript stopwatch
+# JavaScript projects for beginners
 
 https://mikkegoes.com/javascript-projects-for-beginners/
 
