@@ -1,0 +1,88 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+div {
+  display: flex;
+}
+
+.calculator {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  flex-direction: column;
+  padding: 20px;
+  width: 500px;
+  margin: 30px auto;
+}
+
+.display {
+  border: 1px solid #ddd;
+  border-radius: 1px;
+  height: 60px;
+  margin: 10px;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px 15px 0 0;
+  overflow-x: auto;
+}
+.display:hover {
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.left-pannel {
+  flex-grow: 3;
+}
+
+.right-pannel {
+  flex-grow: 1;
+}
+
+button {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  flex-grow: 1;
+  flex-basis: min-content;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8rem;
+}
+button:hover {
+  background-color: #e0e0e0;
+  border: 1px solid #c6c6c6;
+}
+button:active {
+  font-weight: bold;
+}
+button.operator {
+  background-color: #ddd;
+  border: 1px solid #c4c4c4;
+}
+button.operator:hover {
+  background-color: #c4c4c4;
+  border: 1px solid #aaaaaa;
+}
+button.equal {
+  background-color: #4d90fe;
+  border: 1px solid #1a70fe;
+  color: #fff;
+}
+button.equal:hover {
+  background-color: #1a70fe;
+  border: 1px solid #0157e4;
+}
+
+/*# sourceMappingURL=calculator.css.map */

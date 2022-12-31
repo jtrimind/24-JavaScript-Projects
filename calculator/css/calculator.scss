@@ -1,0 +1,91 @@
+@mixin border($color: #ddd) {
+    border: 1px solid $color;
+    border-radius: 1px;
+}
+
+@mixin setColors($color: #ddd) {
+    background-color: $color;
+    border: 1px solid darken($color, 10%);
+
+    &:hover {
+        background-color: darken($color, 10%);
+        border: 1px solid darken($color, 20%);
+    }
+}
+
+@mixin shadow {
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+div {
+    display: flex;
+}
+
+.calculator {
+    @include border;
+    @include shadow;
+    flex-direction: column;
+    padding: 20px;
+    width: 500px;
+    margin: 30px auto;
+}
+
+.display {
+    @include border;
+    height: 60px;
+    margin: 10px;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 20px 15px 0 0;
+    overflow-x: auto;
+
+    &:hover {
+        @include shadow;
+    }
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.left-pannel {
+    flex-grow: 3;
+}
+
+.right-pannel {
+    flex-grow: 1;
+}
+
+button {
+    @include setColors(#f9f9f9);
+    flex-grow: 1;
+    flex-basis: min-content;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.8rem;
+
+    &:active {
+        font-weight: bold;
+    }
+
+    &.operator {
+        @include setColors(#ddd);
+    }
+
+    &.equal {
+        @include setColors(#4d90fe);
+        color: #fff;
+    }
+}
