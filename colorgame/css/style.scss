@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+$theme-color: #2C8E99;
+$theme-color-white: white;
+
+body {
+    background-color: #232323;
+    font-family: "Raleway", Sans-serif;
+    margin: 0;
+}
+
+div#header {
+    background-color: $theme-color;
+    color: white;
+
+    h1 {
+        margin: 0;
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    #color-display {
+        display: block;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+}
+
+div#stripe {
+    color: $theme-color;
+    background-color: $theme-color-white;
+    text-align: center;
+    height: 100%;
+
+    button {
+        color: $theme-color;
+        background-color: $theme-color-white;
+        border: none;
+        height: 100%;
+        font-size: 1.5em;
+        text-transform: uppercase;        
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $theme-color;
+            color: $theme-color-white;
+        }
+
+        &.selected {
+            background-color: $theme-color;
+            color: $theme-color-white;
+        }
+    }
+
+    span#message-display {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        display: inline-block;
+        width: 20%;
+    }
+}
+
+div#container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    .square {
+        display: block;
+        width: 30%;
+        padding-bottom: 30%;
+        margin: 1.66%;
+        border-radius: 20%;
+        float: left;
+        transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $theme-color;
+        }
+    }
+}

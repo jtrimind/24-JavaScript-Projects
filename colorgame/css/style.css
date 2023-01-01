@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+body {
+  background-color: #232323;
+  font-family: "Raleway", Sans-serif;
+  margin: 0;
+}
+
+div#header {
+  background-color: #2C8E99;
+  color: white;
+}
+div#header h1 {
+  margin: 0;
+  font-size: 3.5em;
+  text-align: center;
+}
+div#header #color-display {
+  display: block;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+div#stripe {
+  color: #2C8E99;
+  background-color: white;
+  text-align: center;
+  height: 100%;
+}
+div#stripe button {
+  color: #2C8E99;
+  background-color: white;
+  border: none;
+  height: 100%;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+div#stripe button:hover {
+  background-color: #2C8E99;
+  color: white;
+}
+div#stripe button.selected {
+  background-color: #2C8E99;
+  color: white;
+}
+div#stripe span#message-display {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  display: inline-block;
+  width: 20%;
+}
+
+div#container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+div#container .square {
+  display: block;
+  width: 30%;
+  padding-bottom: 30%;
+  margin: 1.66%;
+  border-radius: 20%;
+  float: left;
+  transition: background-color 0.5s ease-in-out;
+}
+div#container .square:hover {
+  background-color: #2C8E99;
+}
+
+/*# sourceMappingURL=style.css.map */
