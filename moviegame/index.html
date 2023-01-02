@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>이병헌 게임</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8953017922824503"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="root">
+        <dialog id="dialog">
+            <h1 id="result"></h1>
+            <p id="score-display"></p>
+            <button id="reset-button">다시하기</button>
+            <button id="share-button">공유하기</button>
+        </dialog>
+        <div id="header">
+            <h1>이병헌 게임:
+                <span id="cast">&nbsp</span>
+                은(는) 누구일까요?
+            </h1>
+        </div>
+        <div id="stripe">
+            <span id="message-display">&nbsp</span>
+            <meter id="life" value="3" min="0" max="3" optimum="3"></meter>
+        </div>
+        <div id="container">
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="moviegame.js"></script>
+
+</html>

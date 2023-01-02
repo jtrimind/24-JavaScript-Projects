@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+$theme-color: #2C8E99;
+$theme-color-white: white;
+
+body {
+    background-color: #232323;
+    font-family: "Raleway", Sans-serif;
+    margin: 0;
+}
+
+div#header {
+    background-color: $theme-color;
+    color: white;
+
+    h1 {
+        margin: 0;
+        font-size: 3.5em;
+        text-align: center;
+    }
+
+    #cast {
+        display: block;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+}
+
+div#stripe {
+    color: $theme-color;
+    background-color: $theme-color-white;
+    text-align: center;
+    height: 30px;
+
+    span#message-display {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        display: inline-block;
+        width: 20%;
+    }
+}
+
+div#container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+
+    .square {
+        display: block;
+        width: 40%;
+        padding-bottom: 30%;
+        border-radius: 20%;
+        float: left;
+        transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 0 3px $theme-color inset;
+        }
+    }
+}
+
+dialog {
+    background-color: $theme-color;
+    color: $theme-color-white;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+
+    button {
+        background-color: $theme-color-white;
+        color: $theme-color;
+        border: 0;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 300;
+        margin: 10px;
+        transition: background-color 0.5s ease-in-out;
+
+        &:hover {
+            background-color: $theme-color;
+            color: $theme-color-white;
+        }
+    }
+}
